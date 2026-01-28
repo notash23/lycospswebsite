@@ -8,6 +8,14 @@ import cow5 from '../images/execboard/cow5.webp';
 import cow6 from '../images/execboard/cow6.webp';
 import cow7 from '../images/execboard/cow7.webp';
 import cow8 from '../images/execboard/cow8.webp';
+import eventcoordinator from '../images/execboard/eventcoordinator.webp';
+import president from '../images/execboard/president.webp';
+import publicrelations from '../images/execboard/publicrelations.webp';
+import secretary from '../images/execboard/secretary.webp';
+import treasurer from '../images/execboard/treasurer.webp';
+import vicepresident from '../images/execboard/vicepresident.webp';
+
+
 import { exec_board, exec_board_parent, profile, profile_bio } from './ExecBoard.module.scss';
 
 
@@ -16,15 +24,17 @@ function ExecBoard() {
     <div className={exec_board_parent}>
       <div className={exec_board}>
         <ExecItem
-          name='Matthew Motuz'
+          name='Angelina Madonna'
+          avatar={president}
           position='President'
         />
         <ExecItem
           name='Izzy Jackson'
+          avatar={vicepresident}
           position='Vice President'
         />
         <ExecItem
-          name='Mohamed Ebeid'
+          name='Dwarka Akash'
           position='Webmaster'
         />
         <ExecItem
@@ -33,19 +43,23 @@ function ExecBoard() {
           position='Faculty Advisor'
         />
         <ExecItem
-          name='Zachary Pleska'
+          name='Emma Ashfield'
+          avatar={secretary}
           position='Secretary'
         />
         <ExecItem
-          name='Angelina Madonna'
+          name='Mia Benedetto'
+          avatar={treasurer}
           position='Treasurer'
         />
         <ExecItem
-          name='William Parsells'
+          name='Sarah Bach'
+          avatar={publicrelations}
           position='Public Relations'
         />
         <ExecItem
-          name='Zoie Dodson'
+          name='Justice Ortegon'
+          avatar={eventcoordinator}
           position='Event Coordinator'
         />
       </div>

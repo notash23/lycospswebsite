@@ -8,7 +8,7 @@ const EmailContactForm = () => {
   const form = useRef();
   const [message, setMessage] = React.useState<string | undefined>(undefined);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
     emailjs.sendForm('service_8321cqv', 'template_440uze4', form.current, '1afItGsg7LU_g73tM')
